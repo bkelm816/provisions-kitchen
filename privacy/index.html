@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Provisions Kitchen</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<p class="app"><a href="../support/">Provisions Kitchen</a></p>
+<h1>Privacy Policy</h1>
+<p class="meta">Effective October 29, 2026</p>
+
+<p>Provisions Kitchen ("Provisions") plans a household's meals, builds the grocery list, and estimates what it costs at Harris Teeter. It's made by Brandon Kelm, an individual developer. Questions or requests: <a href="mailto:bkelm816@gmail.com">bkelm816@gmail.com</a>.</p>
+
+<h2>In short</h2>
+<ul>
+<li>There's no account and no sign-in.</li>
+<li>No ads, no analytics, no tracking, and no third-party code in the app.</li>
+<li>Your recipes, plans and lists live in your own iCloud. I can't see them.</li>
+<li>To show prices, the app sends a ZIP code, grocery item names and product numbers to my price server. None of that is tied to you.</li>
+</ul>
+
+<h2>What my price server receives</h2>
+<p>Prices come from Kroger (Harris Teeter is a Kroger company) through a small server I run on Amazon Web Services. To answer the app, it receives:</p>
+<ul>
+<li><strong>A ZIP code</strong>, to find Harris Teeter stores near you. You type it, or the app works it out on your phone from your location if you allow that.</li>
+<li><strong>The store you picked</strong>, as Kroger's store number.</li>
+<li><strong>Grocery item names</strong>, such as "black beans", to search for products.</li>
+<li><strong>Kroger product numbers</strong>, to look up their prices.</li>
+</ul>
+<p>The server never receives your name, Apple ID, email, contacts, or your recipes and plans. It doesn't log who asked for what.</p>
+<p>The server keeps Kroger's answers for a while, so it doesn't have to ask Kroger again: store lists for up to 90 days, product searches and prices for up to 30 days, and less when Kroger asks for less. They're deleted automatically. These copies are keyed by ZIP code, store, search words or product number, never by person.</p>
+<p><strong>App check.</strong> So that only the real app can use the price server, the app proves to it that it's the genuine Provisions on a real Apple device, using Apple's App Attest. For that, the server keeps a random key that your copy of the app created, with its public half and a counter. It's kept apart from everything the app asks for and isn't linked to you. It's deleted automatically after a year without use, and deleting the app makes a new one if you install it again.</p>
+<p><strong>Price history.</strong> If it's ever turned on, the server keeps the prices it fetched from Kroger for up to a year, to tell you when a price is the lowest in 8 weeks. That history holds only products, stores and prices, nothing about any user.</p>
+
+<h2>Kroger</h2>
+<p>Product names, sizes, prices and photos come from Kroger's public developer API. Product photos load directly from Kroger's image servers, so Kroger sees your device's internet address when they load, as with any website. <a href="https://www.kroger.com/i/privacy-policy">Kroger's privacy policy</a> applies to that. Provisions isn't affiliated with or endorsed by Kroger or Harris Teeter.</p>
+
+<h2>iCloud and your household</h2>
+<p>Recipes, meal plans, grocery lists, settings and photos are stored with Apple's CloudKit in your iCloud account, and shared only with people you invite to your household. I can't read them. <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a> applies. The app also works without iCloud, keeping everything on the phone.</p>
+
+<h2>What stays on your phone</h2>
+<ul>
+<li><strong>Screenshots</strong> you import are read on the device, with Apple's Vision and, on supported devices, Apple Intelligence. They're never uploaded.</li>
+<li><strong>Your location</strong>, if you turn it on in Settings, is used for the weather on your plan and to find nearby stores. Coordinates go only to Apple (WeatherKit and Maps). Only a ZIP code reaches my server.</li>
+<li><strong>Notifications</strong> (cooking timers and start-by reminders) are scheduled on the phone. Nothing is sent from a server.</li>
+<li><strong>Recipe pages</strong>: when you import a recipe from a link, your phone fetches that page directly from its website, like a browser would. The website sees an ordinary visit.</li>
+</ul>
+
+<h2>Keeping and deleting your data</h2>
+<ul>
+<li>Delete a recipe in the app. It moves to Recently Deleted, which empties after 30 days.</li>
+<li>Leave a household in Settings → Household. You keep your own copy.</li>
+<li>Delete everything in iCloud: on your iPhone, Settings → your name → iCloud → Manage Storage (or Storage) → Provisions → Delete Data. Deleting the app removes what's on the phone.</li>
+<li>The price server holds nothing that identifies you, and its copies expire on their own. For any request or question, email <a href="mailto:bkelm816@gmail.com">bkelm816@gmail.com</a>.</li>
+</ul>
+
+<h2>Children</h2>
+<p>Provisions isn't directed at children under 13, and I don't knowingly collect information from them.</p>
+
+<h2>Your rights</h2>
+<p>I don't sell or share personal information, for advertising or anything else. Wherever you live, you can ask me about your data at the email above.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version is posted here with a new effective date. Significant changes are also noted in the app's release notes.</p>
+</main>
+</body>
+</html>
